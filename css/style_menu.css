@@ -1,0 +1,35 @@
+.menu
+{
+    text-align: center;
+    font-family: 'Lato';
+    margin-bottom: 70px;
+}
+
+
+.cat .cat-title
+{
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: 70px;
+}
+
+.cat img
+{
+    width: 100%;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.cat
+{
+    transition: transform cubic-bezier(0.52, 0.22, 0.53, 1.85) 0.3s;
+    padding-bottom: 50px;
+}
+
+.cat:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}

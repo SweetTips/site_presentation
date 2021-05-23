@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luc Perez</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <!-- My CSS-->
+    <link rel="stylesheet" href="css/style_general.css">
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/style_page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header row">
+            <div class="col-12">
+                <div id="git" class="p-3">
+                    <img id="git-logo" class="mr-2" src="ressources/github.png" alt="">
+                    <a href="https://github.com/SweetTips" target="_blank">GitHub Link</a>
+                </div>
+                <a class="title" href="#">
+                    <span></span>
+                    My work
+                    <h4 id="sub-title">Edit by Luc Perez</h4>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="row justify-content-around">
+                <div data="page_dev_app" class="col-lg-3 cat">
+                    <p class="cat-title">Développement application</p>
+                    <img src="ressources/devapp.png" alt="">
+                </div>
+                <div class="col-lg-3 cat">
+                    <p class="cat-title">Compétences électronique</p>
+                    <img src="ressources/ship.png" alt="">
+                </div>
+                <div class="col-lg-3 cat">
+                    <p class="cat-title">Connaissances scientifiques</p>
+                    <img src="ressources/atome.png" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-3 cat">
+                    <p class="cat-title">Compétences Réseau</p>
+                    <img src="ressources/serveur.png" alt="">
+                </div>
+                <div data="page_securite" class="col-lg-3 cat">
+                    <p class="cat-title">Sécurité des données</p>
+                    <img src="ressources/cadenas.png" alt="">
+                </div>
+                <div class="col-lg-3 cat">
+                    <p class="cat-title">Outils utilisés</p>
+                    <img src="ressources/logiciel.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--Pages load with ajax request -->
+        <div id="page"></div>
+    </div>
+
+    <script src="vendor/jquery-3.2.1.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/ajax_page_request.js"></script>
+</body>
+</html>

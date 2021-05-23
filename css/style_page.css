@@ -1,0 +1,104 @@
+p
+{
+    color: #ffffff85;
+    margin-bottom: 7px;
+}
+
+#page
+{
+    display: none;
+    transition: all 1s;
+}
+
+#page h3
+{
+    margin: 0;
+    text-align: center;
+    color: #a0a0a08c;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+
+.sub-title-page
+{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'leto';
+    color: #f0f8ffc9;
+}
+
+#page .gear
+{
+    border-radius: 100%;
+    box-shadow: 100px 100px 200px;
+    width: 50%;
+    opacity: 0.5;
+    color: #ffffff;
+    animation: rotate-gear 20s infinite;
+    margin-left: 130px;
+    margin-bottom: 90px;
+}
+
+#menu-icon
+{
+    height: 50px;
+    transition: transform cubic-bezier(0.52, 0.22, 0.53, 1.85) 0.3s;
+}
+
+#menu-icon:hover
+{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+@keyframes rotate-gear {
+    0%
+    {
+        transform: rotate(1deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.test
+{
+  width: 100%;
+  height: 650px;
+  background-image: url('../ressources/photo_slider_1_1.JPG');
+}
+
+.test:before
+{
+  content: '';
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+.test:after
+{
+  display: block;
+  background-image: url('../ressources/photo_slider_1_2.JPG');
+  background-position-x: -300px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+  animation: 10s animtest infinite;
+}
+
+@keyframes animtest {
+    0%
+    {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    100%
+    {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);   
+    }
+}
