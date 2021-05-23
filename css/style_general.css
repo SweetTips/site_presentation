@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body
 {
     background: url("../ressources/fond.jpg") no-repeat center center fixed;
@@ -15,6 +21,22 @@ body
 {
     width: 2rem;
     opacity: 0.5;
+}
+
+#codepen img
+{
+    width: 2rem;
+    opacity: 0.5; 
+}
+
+#git
+{
+    display: inline-block;
+}
+
+#codepen
+{
+    display: inline-block;
 }
 
 a

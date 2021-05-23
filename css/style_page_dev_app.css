@@ -1,0 +1,34 @@
+.test
+{
+  width: 100%;
+  height: 650px;
+  background-image: url('../ressources/photo_slider_1_1.JPG');
+}
+
+.test:after
+{
+  display: block;
+  background-image: url('../ressources/photo_slider_1_2.JPG');
+  background-position-x: -600px;
+  background-position-y: -300px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+  animation: 10s animtest infinite;
+}
+
+@keyframes animtest {
+    0%
+    {
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100%
+    {
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+}

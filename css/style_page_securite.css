@@ -1,0 +1,23 @@
+#page .gear
+{
+    border-radius: 100%;
+    box-shadow: 100px 100px 200px;
+    width: 50%;
+    opacity: 0.5;
+    color: #ffffff;
+    animation: rotate-gear 20s infinite;
+    margin-left: 130px;
+    margin-bottom: 90px;
+}
+
+@keyframes rotate-gear {
+    0%
+    {
+        transform: rotate(1deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
