@@ -15,5 +15,22 @@ $(window).scroll(function(){
 
 $('.container').on( 'click', '#menu-icon, .cat', function(){
     $('#page').fadeToggle();
-    $('.menu').fadeToggle();
+    $('#menu').fadeToggle();
+    $('#menu-competences').fadeToggle();
+});
+
+$('.container').on( 'click', '#button-profil', function(){
+    $('#menu-profil').addClass('translate');
+    $('#menu-competences').addClass('translate');
+
+    $('#button-profil').addClass('active');
+    $('#button-competences').removeClass('active');
+});
+
+$('.container').on( 'click', '#button-competences', function(){
+    $('#menu-profil').removeClass('translate');
+    $('#menu-competences').removeClass('translate');
+
+    $('#button-profil').removeClass('active');
+    $('#button-competences').addClass('active');
 });

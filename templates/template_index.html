@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style_general.css">
     <link rel="stylesheet" href="css/style_menu.css">
     <link rel="stylesheet" href="css/style_page.css">
+    <link rel="stylesheet" href="css/style_profil.css">
     
     <link rel="stylesheet" href="css/style_page_reseau.css">
     <link rel="stylesheet" href="css/style_page_dev_app.css">
@@ -33,6 +34,10 @@
                     <img id="codepen-logo" class="mr-2" src="ressources/codepen.png" alt="">
                     <a href="https://codepen.io/lucprz64/pens/public" target="_blank">My CodePen</a>
                 </div>
+                <div id="email" class="p-3">
+                    <img id="email-logo" class="mr-2" src="ressources/letter.png" alt="">
+                    <a href="mailto:luc.perez.pro@gmail.com" target="_blank">luc.perez.pro@gmail.com</a>
+                </div>
                 <div class="title" href="#">
                     <span></span>
                     My work
@@ -40,37 +45,68 @@
                 </div>
             </div>
         </div>
-        <div class="menu">
-            <div class="row justify-content-around">
-                <div data="page_dev_app" class="col-lg-3 cat">
-                    <p class="cat-title">Développement application</p>
-                    <img src="ressources/devapp.png" alt="">
+        <div id="menu" class="row justify-content-center">
+                <div id="button-competences" class="col-4 onglet mr-1 active">Compétences</div>
+                <div id="button-profil" class="col-4 onglet">Profil</div>
+        </div>
+        <div id="menu-container">
+            <div id="menu-competences">
+                <div class="row justify-content-around">
+                    <div data="page_dev_app" class="col-lg-3 cat">
+                        <p class="cat-title">Développement application</p>
+                        <img src="ressources/devapp.png" alt="">
+                    </div>
+                    <div class="col-lg-3 cat">
+                        <p class="cat-title">Compétences électronique</p>
+                        <img src="ressources/ship.png" alt="">
+                    </div>
+                    <div class="col-lg-3 cat">
+                        <p class="cat-title">Connaissances scientifiques</p>
+                        <img src="ressources/atome.png" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-3 cat">
-                    <p class="cat-title">Compétences électronique</p>
-                    <img src="ressources/ship.png" alt="">
-                </div>
-                <div class="col-lg-3 cat">
-                    <p class="cat-title">Connaissances scientifiques</p>
-                    <img src="ressources/atome.png" alt="">
+                <div class="row justify-content-around">
+                    <div data="page_reseau" class="col-lg-3 cat">
+                        <p class="cat-title">Compétences Réseau</p>
+                        <img src="ressources/serveur.png" alt="">
+                    </div>
+                    <div data="page_securite" class="col-lg-3 cat">
+                        <p class="cat-title">Sécurité des données</p>
+                        <img src="ressources/cadenas.png" alt="">
+                    </div>
+                    <div class="col-lg-3 cat">
+                        <p class="cat-title">Outils utilisés</p>
+                        <img src="ressources/logiciel.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-around">
-                <div data="page_reseau" class="col-lg-3 cat">
-                    <p class="cat-title">Compétences Réseau</p>
-                    <img src="ressources/serveur.png" alt="">
+            <div id="menu-profil">
+                <div class="row justify-content-around">
+                    <div data="page_presentation" class="col-lg-3 cat">
+                        <p class="cat-title">Présentation et coordonnées</p>
+                        <img src="ressources/user.png" alt="">
+                    </div>
+                    <div class="col-lg-3 cat">
+                        <p class="cat-title">éxperiences</p>
+                        <img src="ressources/case.png" alt="">
+                    </div>
+                    <div class="col-lg-3 cat">
+                        <p class="cat-title">Diplômes</p>
+                        <img src="ressources/diplome.png" alt="">
+                    </div>
                 </div>
-                <div data="page_securite" class="col-lg-3 cat">
-                    <p class="cat-title">Sécurité des données</p>
-                    <img src="ressources/cadenas.png" alt="">
-                </div>
-                <div class="col-lg-3 cat">
-                    <p class="cat-title">Outils utilisés</p>
-                    <img src="ressources/logiciel.png" alt="">
+                <div class="row justify-content-around">
+                    <div data="page_reseau" class="col-lg-3 cat">
+                        <p class="cat-title">Hobby</p>
+                        <img src="ressources/hobby.png" alt="">
+                    </div>
+                    <div data="page_securite" class="col-lg-3 cat">
+                    </div>
+                    <div class="col-lg-3 cat">
+                    </div>
                 </div>
             </div>
         </div>
-
         <!--Pages load with ajax request -->
         <div id="page"></div>
     </div>

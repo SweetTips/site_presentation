@@ -29,6 +29,12 @@ body
     opacity: 0.5; 
 }
 
+#email img
+{
+    width: 2rem;
+    opacity: 0.5; 
+}
+
 #git
 {
     display: inline-block;
@@ -37,6 +43,11 @@ body
 #codepen
 {
     display: inline-block;
+}
+
+#email
+{
+    float: right;
 }
 
 a
@@ -105,6 +116,31 @@ a:hover
   height: 2px;
   background: linear-gradient(90deg, transparent,#a0a0a08c);
   animation: slide-line 3s infinite
+}
+
+#menu
+{
+    margin-bottom: 50px;
+}
+.onglet
+{
+    color: white;
+	text-align: center;
+    letter-spacing: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 30px;
+    background-color: rgba(255,255,255,0.2);
+	font-family: 'Arial';
+	cursor: pointer;
+    border-radius: 10px;
+	transition: 0.5s all;
+}
+
+#menu .onglet:hover
+{
+    background-color: #ffffff85;
+    color: black;
 }
 
 @keyframes slide-line

@@ -1,8 +1,49 @@
-.menu
+#button-profil.active{
+    background-color: #ffffff85;
+    color: black;
+}
+
+#button-competences.active{
+    background-color: #ffffff85;
+    color: black;
+}
+
+#menu-container
 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
     text-align: center;
     font-family: 'Lato';
-    padding-bottom: 70px;
+}
+
+#menu-profil
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+    transition: 1s all;
+    transform: translateX(100%);
+}
+
+#menu-competences
+{
+    transition: 1s all;
+    transform: translateX(0);
+}
+
+#menu-profil.translate
+{
+    transition: 1s all;
+    transform: translateX(0);
+}
+
+#menu-competences.translate
+{
+    transition: 1s all;
+    transform: translateX(-100%);
 }
 
 
